@@ -5,7 +5,7 @@ n = 1
 my_list = []
 for i in range(size):
     n = (1 + 1/n)**n
-    my_list.append(n)
+    my_list.append(round(n, 6))
 summa = 0
 for i in range(size):
     summa += my_list[i]
