@@ -1,11 +1,11 @@
 # Задайте список из нескольких чисел. Напишите программу, которая найдёт сумму элементов списка с нечетными индексами.
 # Пример: [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-my_list = list(map(int(input('Введите числа через пробел: ')).strip()))
-print(my_list)
-summ = 0
-for i in range(len(my_list)):
-    if i % 2 != 0:
-        summ += my_list[i]
-    print(f'Сумма элементов на нечетных позициях равна {summ}')
 
+
+numbers = [2, 3, 5, 9, 3, 88, 8, 1]
+new_numbers = []
+print(numbers)
+for i in range(1, len(numbers), 2):
+    new_numbers.append(numbers[i])
+print(f'На нечетных позициях находятся элементы {new_numbers} их сумма равна {sum(new_numbers)}')
