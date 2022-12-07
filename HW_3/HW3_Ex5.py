@@ -4,8 +4,7 @@
 size = int(input('Введите длину списка чисел Фибоначчи - '))
 first_fibo = [1, 0, 1]
 
-for i in range(2, size+2):
-    first_fibo.append((first_fibo[i-1]+first_fibo[i]))
 for i in range(size):
+    first_fibo.append((first_fibo[-2]+first_fibo[-1]))
     first_fibo.insert(0, first_fibo[1] - first_fibo[0])
 print(first_fibo)
